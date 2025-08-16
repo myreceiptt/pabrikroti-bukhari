@@ -12,7 +12,7 @@ Link #1: [galeri.harmoniistiqlal.com](https://galeri.harmoniistiqlal.com/)
 Link #2: [bukhari.voyage.co.id](https://bukhari.voyage.co.id/)  
 Link #3: [bukhari.endhonesa.com](https://bukhari.endhonesa.com/)
 
-🧬 Forked from [PABRIKROTI-MASTER](https://github.com/myreceiptt/pabrikroti-master/tree/bukhari)
+🧬 Forked from [PABRIKROTI-MASTER](https://github.com/myreceiptt/pabrikroti-master/releases/tag/v.1.3.3-bukhari)
 
 ## 📜 License
 
