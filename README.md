@@ -6,6 +6,75 @@
 
 ---
 
+---
+
+## Maintenance by Prof. NOTA Evergreen Standard
+
+This repo is intended to stay evergreen while remaining production-safe.
+
+### Runtime
+
+- Node: **24.x** (see `package.json#engines`)
+
+  - ~~example alternatives: 22.x / 20.x (adjust if platform requires)~~
+
+- Package manager:
+
+  - **Yarn 4.x** (lockfile: `yarn.lock`)
+  - ~~PNPM (lockfile: `pnpm-lock.yaml`)~~
+  - ~~NPM (lockfile: `package-lock.json`)~~
+
+- Deploy target:
+
+  - **Vercel**
+  - ~~Netlify~~
+  - ~~Self-hosted / Docker~~
+  - ~~Other platform (document explicitly)~~
+
+### Monthly Safe Updates (recommended)
+
+1. Check what's outdated:
+
+   - `yarn up -i`
+   - ~~pnpm outdated~~
+   - ~~npm outdated~~
+
+2. Upgrade safe (patch/minor) versions:
+
+   - `yarn up`
+   - ~~pnpm update~~
+   - ~~npm update~~
+   - or upgrade specific packages shown as non-major
+
+3. Verify:
+
+   - `yarn npm audit --severity moderate`
+   - ~~pnpm audit~~
+   - ~~npm audit~~
+   - `yarn build`
+   - ~~pnpm build~~
+   - ~~npm run build~~
+
+4. Deploy:
+
+   - **Vercel auto-deploy from `main`**
+   - ~~manual deploy according to platform workflow~~
+
+### Major Updates (quarterly / scheduled)
+
+Major upgrades (framework, runtime, or core tooling) must be done one at a time, with a dedicated PR and full testing.
+
+Examples:
+
+- Node major version
+- Next.js / React major version
+- Tailwind CSS major version
+- Package manager major version
+
+---
+
+---
+
 ## PABRIK ROTI v.1.3.3.1: Staging MeMoRa of Voyage.Co.Id by Bukhari Creative Group
 
 Link #1: [galeri.harmoniistiqlal.com](https://galeri.harmoniistiqlal.com/)  
@@ -31,13 +100,13 @@ yarn
 ### Check outdated dependencies
 
 ```bash
-yarn outdated
+yarn up -i
 ```
 
 ### Upgrade dependencies interactively
 
 ```bash
-yarn upgrade-interactive --latest
+yarn up -i
 ```
 
 ### Start development server
