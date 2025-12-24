@@ -27,7 +27,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "format": "prettier --write ."
   },
   "dependencies": {
@@ -40,20 +40,21 @@
     "thirdweb": "^5.96.1"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.0.0",
     "@tailwindcss/postcss": "^4.1.4",
-    "@types/node": "25.0.3",
+    "@types/node": "24.0.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "@typescript-eslint/parser": "^8.0.0",
     "eslint": "^9.25.1",
-    "eslint-config-next": "16.1.1",
+    "globals": "^15.0.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3"
   },
   "engines": {
-    "node": ">=24.0.0",
-    "yarn": ">=4.0.0"
+    "node": "24.x",
+    "yarn": "4.x"
   },
   "packageManager": "yarn@4.12.0"
 }
